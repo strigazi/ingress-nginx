@@ -456,7 +456,7 @@ func (n NGINXController) generateTemplate(cfg ngx_config.Configuration, ingressC
 				Hostname:      pb.Hostname,
 				IP:            svc.Spec.ClusterIP,
 				Port:          port,
-				ProxyProtocol: false,
+				ProxyProtocol: true,
 			})
 		}
 
